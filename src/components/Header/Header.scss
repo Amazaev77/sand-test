@@ -1,0 +1,101 @@
+.header-background {
+  width: 100%;
+  height: 80px;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  max-width: 1920px;
+  background-color: #fff;
+  padding: 20px 45px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  &-position {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+  }
+  &__hamburger {
+    width: 18px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 10px;
+    z-index: 1;
+  }
+  &__logo {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+  }
+  &__logo-name {
+    color: #220646;
+    font-weight: 700;
+    margin-left: 10px;
+    span {
+      @media (max-width: 1199px) {
+        display: none;
+      }
+    }
+  }
+  &__title {
+    color: #A0AEC0;
+    font-weight: 400;
+    margin-right: 40px;
+  }
+  &__form {
+    flex: 1;
+    margin-right: 10px;
+  }
+  &__help {
+    a {
+      color: #4A5568;
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 12px;
+    }
+  }
+  &__inbox {
+    margin-left: 38px;
+    a {
+      color: #4A5568;
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 12px;
+    }
+  }
+  &__button {
+    margin: 0 20px 0 40px;
+  }
+  &__avatar {
+    div {
+      width: 45px;
+      height: 45px;
+      background: #bbbaba;
+      border-radius: 100%;
+      cursor: pointer;
+    }
+  }
+}
+
+.button {
+  font-weight: 400;
+  color: white;
+  width: 100px;
+  height: 30px;
+  font-size: 12px;
+  background: #6B46C1;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: background 60ms;
+  &:active {
+    background: #4f21af;
+  }
+}

@@ -1,0 +1,14 @@
+.table__item {
+  color: #4A5568;
+  background-color: #fff;
+  font-weight: 400;
+  display: flex;
+  padding: 25px 25px 25px 35px;
+  margin-bottom: 2px;
+  div:not(:first-child) {
+    flex: 2;
+  }
+  div:first-child {
+    flex: 1;
+  }
+}

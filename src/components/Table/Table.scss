@@ -1,0 +1,32 @@
+.table {
+  border-right: 5px;
+  &__header {
+    border-radius: 5px 5px 0 0;
+    background: white;
+    padding: 22px 25px 22px 35px;
+    box-sizing: border-box;
+    display: flex;
+  }
+  &__checkbox-all {
+    flex: 2;
+  }
+  &__title {
+    color: #4A5568;
+    font-weight: 700;
+    font-size: 20px;
+    flex: 9;
+  }
+  &__thead {
+    color: #4A5568;
+    font-weight: 400;
+    display: flex;
+    background: #EDF2F7;
+    padding: 10px 25px 10px 35px;
+    div:not(:first-child) {
+      flex: 2;
+    }
+    div:first-child {
+      flex: 1;
+    }
+  }
+}
